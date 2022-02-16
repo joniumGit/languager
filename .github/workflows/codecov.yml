@@ -16,10 +16,17 @@ jobs:
         uses: actions/setup-python@master
         with:
           python-version: 3.8
-      - name: Generate coverage report
+      - name: Install Deps
         run: |
           pip install pytest
           pip install pytest-cov
+      - name: Generate File
+        run: |
+           cd ./generator
+           python generator.py
+           cd ..
+      - name: Generate coverage report
+        run: |
           pip install -e .
           pytest --cov=languager
       - uses: codecov/codecov-action@v2
