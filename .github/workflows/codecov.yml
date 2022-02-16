@@ -28,9 +28,9 @@ jobs:
       - name: Generate coverage report
         run: |
           pip install -e .
-          pytest --cov=languager
+          pytest --cov=languager --cov-report=xml
       - uses: codecov/codecov-action@v2
         with:
           env_vars: OS,PYTHON
-          files: ./.coverage
+          files: ./coverage.xml
           flags: unittests
