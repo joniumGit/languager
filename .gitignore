@@ -10,3 +10,6 @@ htmlcov
 
 # Exclude generated
 src/languager/languages.py
+
+# Exclude build
+dist
