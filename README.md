@@ -1,6 +1,6 @@
 ## Languager
 
----
+[![codecov](https://codecov.io/github/joniumGit/languager/branch/master/graph/badge.svg)](https://codecov.io/github/joniumGit/languager)
 
 #### ISO639 Language Service
 
