@@ -8,8 +8,11 @@ __pycache__
 .coverage
 htmlcov
 
-# Exclude generated
-src/languager/languages.py
+# Don't exclude generated
+!src/languager/languages.py
 
 # Exclude build
 dist
+
+# Exclude coverage
+coverage.*
